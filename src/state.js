@@ -6,7 +6,7 @@ const host = hash || null
 const peerID = writable(null)
 const { Peer } = peerjs
 
-const peer = new Peer(host ? null : "axel-file-share")
+const peer = new Peer()
 peer.on(
     "open",
     (id) => peerID.set(id)

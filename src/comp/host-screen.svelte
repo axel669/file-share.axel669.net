@@ -8,7 +8,7 @@
     import { peer, peerID } from "../state"
     import gen from "../name/gen"
 
-    const peerURL = `http://localhost:1338#${$peerID}`
+    const peerURL = `${location.origin}#${$peerID}`
 
     let conn = null
     let connected = false
